@@ -1,6 +1,6 @@
 # iacrtrans LaTeX Class Documentation
 
-### Introduction
+#### Introduction
 
 The iacrtans LaTeX class will be used by the new "IACR Transactions on Symmetric
 Cryptology" and "IACR Transactions on Cryptographic Hardware and Embedded Systems"
@@ -11,8 +11,8 @@ as an example to show basic usage of the class.
 
 The class is still in development and feedback and comments are welcome.
 
-# FAQ: Frequently Asked Questions
-## Converting `llncs` papers to `iacrtrans`
+## FAQ: Frequently Asked Questions
+### Converting `llncs` papers to `iacrtrans`
 If you have a paper typeset with the `llncs` class, conversion should be relatively
 easy. The following steps should be sufficient in most cases (for the submission
 version):
@@ -20,12 +20,12 @@ version):
  2. Replace `\bibliographystyle{splncs03}` with `\bibliographystyle{alpha}`;
  3. Add a `\keywords{}` command before the abstract, with keywords separated by `\and`;
  4. Remove commands that might override the class style, such as `\pagestyle{...}` or
-    `\thispagestyle{...}`, change of margins (/e.g./ with the `geometry` package),
+    `\thispagestyle{...}`, change of margins (*e.g.* with the `geometry` package),
     change of fonts, ...
  5. See also the section "Typesetting the Bibliography" for more information about how
     to typeset the bibliography.
 
-## Compilation Issues
+### Compilation Issues
 If your document doesn’t compile with the `iacrtrans` class, you can try adding the
 `[nohyperref]` option. This will disable some code in the class that is known to be fragile,
 in particular the generation of metadata. If this fixes your compilation problems, please
@@ -33,8 +33,8 @@ try to define a clean version of `author`, `title` and/or `keywords` as optional
 these commands (in particular, remove LaTeX macros, and write everything on a single
 line), and see if you document now compiles without the `[nohyperref]` option.
 
-# Main Commands
-## Title Page
+## Main Commands
+### Title Page
 
 The following commands are used to input informations for the title page.
 
